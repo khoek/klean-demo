@@ -1,3 +1,5 @@
 [package]
 name = "klean-demo"
 version = "0.1"
+lean_version = "khoek/klean:3.4.2"
+path = "src"
