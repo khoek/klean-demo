@@ -106,3 +106,6 @@ meta def find_char (pattern : char) (str : string) : option nat :=
 def read_sock (sock : io.socket) (n : ℕ) : io string := do
     str ← io.net.recv sock n,
     return str^.to_string
+
+def write_sock (sock : io.socket) (str : string) : io unit :=
+    io.net.send sock str.to_char_buffer
